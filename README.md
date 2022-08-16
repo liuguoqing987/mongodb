@@ -8,6 +8,7 @@
 - 删除集合：db.collection.drop();
 
 # C
+```text
 插入文档语法：db.COLLECTION_NAME.insert(document)  或者 db.COLLECTION_NAMEl.save(document)
 *如果集合不存在会自动创建集合的呦*
 db.col.insert({title: 'MongoDB 教程',
@@ -17,17 +18,20 @@ db.col.insert({title: 'MongoDB 教程',
     tags: ['mongodb', 'database', 'NoSQL'],
     likes: 100  
 })
+```
 
 doc=({...})
 db.col.save(doc)
 
 创建变量：document=({...})
 # R
+```text
 查询文档语法：db.COLLECTION_NAME.find( {} )
 db.col.find({})
-
+```
 
 # U
+```text
 update() 方法用于更新已存在的文档。语法格式如下：
 db.col.update(    
     <query>, 
@@ -63,9 +67,10 @@ db.collection.save(
 
 document : 文档数据。
 writeConcern :可选，抛出异常的级别。
-
+```
 
 # D
+```text
 删除文档语法：db.col.remove({})  
 db.collection.remove(     
     <query>,     
@@ -79,5 +84,5 @@ db.collection.remove(
 query :（可选）删除的文档的条件。
 justOne : （可选）如果设为 true 或 1，则只删除一个文档。
 writeConcern :（可选）抛出异常的级别。
-
+```
 
